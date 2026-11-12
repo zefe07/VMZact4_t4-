@@ -1,0 +1,23 @@
+info:
+  name: producto
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8085/api/productos
+  body:
+    type: json
+    data: |+
+      {"nombre": "Laptop", "precio": 15000}
+
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvdHJvY29ycmVvQHRlc3QuY29tIiwiaWF0IjoxNzk0NDU5MjIzLCJleHAiOjE3OTQ1NDU2MjN9.rFind_eQdwJEPYBymLKCEZjk_bDbNxPfc7IEtJqpjXk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
