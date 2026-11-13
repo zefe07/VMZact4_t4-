@@ -1,0 +1,23 @@
+info:
+  name: login remote
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://77.113.100.81:8086/api/auth/login
+  body:
+    type: json
+    data: |-
+      {
+        "email": "otrocorreo@test.com",
+        "password": "password123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
