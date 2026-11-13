@@ -19,24 +19,6 @@ Este proyecto implementa una API REST completa y protegida, utilizando **Spring 
 
 ---
 
-## 📸 Evidencia de Funcionamiento (Pruebas en Bruno)
-
-### 1. Login (Obtención del Token)
-*Petición POST al endpoint `/api/auth/login`. Devuelve un JWT real.*
-[PEGA AQUÍ LA CAPTURA DE BRUNO DEL LOGIN EXITOSO]
-
-### 2. Prueba sin token (Rechazado por Seguridad)
-*Petición GET a `/api/productos` sin token. Spring Security bloquea el acceso con un 403 Forbidden.*
-[PEGA AQUÍ LA CAPTURA DEL 403 FORBIDDEN (puede ser la del navegador o la de Bruno)]
-
-### 3. CRUD Protegido (Con Token)
-*Petición POST para crear un producto usando el token en la cabecera Authorization (Bearer Token).*
-[PEGA AQUÍ LA CAPTURA DE BRUNO DEL POST CREANDO UN PRODUCTO (201 Created)]
-
-[PEGA AQUÍ LA CAPTURA DE BRUNO DEL GET LISTANDO LOS PRODUCTOS (200 OK)]
-
----
-
 ## 🚀 Despliegue en el VPS
 El proyecto se encuentra desplegado y funcionando en el VPS de AWS, en el puerto **8086**, conectado a una base de datos MySQL en el servidor:
 
